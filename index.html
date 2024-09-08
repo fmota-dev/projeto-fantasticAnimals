@@ -6,117 +6,208 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Animais Fantásticos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="./assets/imgs/favicon.svg" type="image/svg">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-  <script>
-    document.documentElement.className += ' js';
-  </script>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script>document.documentElement.className += ' js';</script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-  <nav class="menu js-menu">
-    <ul>
-      <li><a href="#animais">Animais</a></li>
-      <li><a href="#faq">Faq</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="https://www.fmota.dev.br/" target="_blank">Dev →</a></li>
-    </ul>
-  </nav>
-  <section class="grid-section animais js-scroll" id="animais">
-    <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
-      <li>
-        <img src="./assets/imgs/imagem1.jpg">
-      </li>
-      <li>
-        <img src="./assets/imgs/imagem2.jpg">
-      </li>
-      <li>
-        <img src="./assets/imgs/imagem3.jpg">
-      </li>
-      <li>
-        <img src="./assets/imgs/imagem4.jpg">
-      </li>
-      <li>
-        <img src="./assets/imgs/imagem5.jpg">
-      </li>
-      <li>
-        <img src="./assets/imgs/imagem6.jpg">
-      </li>
-    </ul>
-    <div class="animais-descricao js-tabcontent ">
-      <section>
-        <h2>Raposa</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a raposa vermelha é a mais comum.</p>
-      </section>
+  <div class="grid-container">
+    <nav class="menu" data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown>
+          <a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="abrir" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
+    <section class="grid-section animais" data-anime="scroll" id="animais">
+      <h1 class="titulo">Animais Fantásticos</h1>
+      <ul class="animais-lista" data-tab="menu">
+        <li>
+          <img src="img/imagem1.jpg">
+        </li>
+        <li>
+          <img src="img/imagem2.jpg">
+        </li>
+        <li>
+          <img src="img/imagem3.jpg">
+        </li>
+        <li>
+          <img src="img/imagem4.jpg">
+        </li>
+        <li>
+          <img src="img/imagem5.jpg">
+        </li>
+        <li>
+          <img src="img/imagem6.jpg">
+        </li>
+      </ul>
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>Raposa</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+        </section>
 
-      <section>
-        <h2>Esquilo</h2>
-        <p>Os esquilos são roedores arborícolas conhecidos por sua agilidade e habilidade em escalar árvores. Eles possuem uma cauda longa e fofa que ajuda na sua estabilidade e equilíbrio durante os saltos de árvore em árvore.</p>
-        <p>Os esquilos são conhecidos por armazenar alimentos para o inverno, escondendo nozes e sementes em várias localizações para uso posterior.</p>
-      </section>
+        <section data-anime="show-right">
+          <h2>Esquilo</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+            verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+            verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Urso</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+            verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Lobo</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+            verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Macaco</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+            verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Leão</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+            verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+        </section>
+      </div>
+    </section>
 
-      <section>
-        <h2>Urso</h2>
-        <p>Os ursos são mamíferos de grande porte que pertencem à família Ursidae. Eles são conhecidos por sua aparência robusta e peluda, com garras poderosas que lhes permitem cavar e capturar presas.</p>
-        <p>Existem várias espécies de ursos, incluindo o urso-pardo, o urso-negro e o urso-polar, cada um adaptado a diferentes habitats e climas ao redor do mundo.</p>
-      </section>
+    <section class="grid-section faq" data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-anime="accordion">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+          caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+        <dt>Eles são fantásticos?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+        </dd>
+        <dt>Qual a diferença?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+          caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+        <dt>Como proteger?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+        </dd>
+      </dl>
+    </section>
 
-      <section>
-        <h2>Lobo</h2>
-        <p>Os lobos são carnívoros da família Canidae e são conhecidos por viverem em matilhas. Eles têm uma aparência semelhante aos cães, mas são maiores e mais selvagens.</p>
-        <p>Os lobos desempenham um papel importante nos ecossistemas como predadores topos, ajudando a controlar as populações de presas e a manter o equilíbrio dos ecossistemas em que habitam.</p>
-      </section>
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid">
+        <div class="numero-animal">
+          <h3>Lobos</h3>
+          <span data-numero>4874</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Raposas</h3>
+          <span data-numero>5374</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Esquilos</h3>
+          <span data-numero>12340</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Ursos</h3>
+          <span data-numero>230</span>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2>Macaco</h2>
-        <p>Os macacos são primatas que se distribuem por uma ampla variedade de habitats em todo o mundo, desde florestas tropicais até desertos. Eles são conhecidos por sua inteligência e habilidades sociais complexas.</p>
-        <p>Existem muitas espécies de macacos, incluindo os macacos-prego, os chimpanzés e os babuínos, cada um com suas próprias características e comportamentos únicos.</p>
-      </section>
+    <section class="grid-section contato" data-anime="scroll" id="contato">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
+        <img src="img/mapa.png">
+      </div>
+      <ul class="dados">
+        <li>contato@origamid.com</li>
+        <li>+55 (21) 9999-9999</li>
+        <li>Rua do Conde, nº 21</li>
+        <li>Rio de Janeiro - RJ</li>
+        <li id="funcionamento" data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Leão</h2>
-        <p>Os leões são grandes felinos conhecidos por sua majestade e força. Eles vivem em grupos chamados de "coalizões" ou "manadas" e são caçadores eficientes, frequentemente caçando presas grandes como zebras e antílopes.</p>
-        <p>Os leões são encontrados principalmente na África subsaariana e são uma das espécies mais reconhecidas e respeitadas do reino animal.</p>
-      </section>
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
     </div>
   </section>
-
-  <section class="grid-section faq js-scroll" id="faq">
-    <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
-      <dt>Quais são as características compartilhadas por raposas, lobos e outros da mesma família?</dt>
-      <dd>Esses animais compartilham hábitos alimentares onívoros, adaptando-se para caçar presas e consumir uma variedade de alimentos disponíveis em seus habitats. Além disso, possuem estruturas corporais ágeis que os auxiliam na locomoção e na busca por alimento.</dd>
-      <dt>O que caracteriza os mamíferos onívoros com focinho comprido e cauda longa?</dt>
-      <dd>Esses animais, como as raposas e os lobos, são reconhecidos por sua adaptabilidade alimentar e habilidades de caça, além de sua estrutura física que facilita a exploração de diferentes ambientes.</dd>
-      <dt>Quantas espécies de raposas são reconhecidas?</dt>
-      <dd>Atualmente, são conhecidas cerca de 40 espécies de raposas, distribuídas em uma ampla variedade de habitats ao redor do mundo, cada uma com suas próprias características e adaptações únicas.</dd>
-      <dt>Por que é importante proteger esses animais?</dt>
-      <dd>A preservação das raposas e de outros membros da família Canidae é essencial para manter o equilíbrio dos ecossistemas, pois esses animais desempenham papéis importantes na regulação de populações de presas e na manutenção da biodiversidade.</dd>
-    </dl>
-  </section>
-
-  <section class="grid-section contato js-scroll" id="contato">
-    <h1 class="titulo">Contato</h1>
-    <div class="mapa">
-      <img src="./assets/imgs/mapa.png">
-    </div>
-    <ul class="dados">
-      <li>contato@origamid.com</li>
-      <li>+55 (21) 9999-9999</li>
-      <li>Rua do Conde, nº 21</li>
-      <li>Rio de Janeiro - RJ</li>
-    </ul>
-  </section>
-
-  <footer class="copy">
-    <p>Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="./assets/js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
