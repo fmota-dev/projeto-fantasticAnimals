@@ -6,9 +6,9 @@ export default function initTabNav() {
     tabContent[0].classList.add('ativo');
 
     function activeTab(index) {
-      tabContent.forEach((section) => {
+      for (const section of tabContent) {
         section.classList.remove('ativo');
-      });
+      }
       const direcao = tabContent[index].dataset.anime;
       tabContent[index].classList.add('ativo', direcao);
     }

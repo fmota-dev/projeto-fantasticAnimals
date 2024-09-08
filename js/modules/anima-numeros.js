@@ -2,7 +2,7 @@ export default function initAnimaNumeros() {
   function animaNumeros() {
     const numeros = document.querySelectorAll('[data-numero]');
   
-    numeros.forEach((numero) => {
+    for (const numero of numeros) {
       const total = +numero.innerText;
       const inscremento = Math.floor(total / 100);
       let start = 0;
@@ -14,7 +14,7 @@ export default function initAnimaNumeros() {
           clearInterval(timer);
         }
       }, 25 * Math.random());
-    });
+    }
   }
   
   function handleMutation(mutation) {

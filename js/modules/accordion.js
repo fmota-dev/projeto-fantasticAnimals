@@ -11,8 +11,8 @@ export default function initAccordion() {
       this.nextElementSibling.classList.toggle(activeClass);
     }
 
-    accordionList.forEach((item) => {
+    for (const item of accordionList) {
       item.addEventListener('click', activeAccordion);
-    });
+    }
   }
 }
